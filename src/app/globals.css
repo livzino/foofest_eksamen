@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* IMPORT AF FONTE */
+
+/* Syncopate */
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,18 +24,35 @@
   }
 }
 
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.btn {
+  background: linear-gradient(90deg, rgba(83, 201, 238, 1) 0%, rgba(76, 151, 236, 1) 35%, rgba(69, 102, 234, 1) 100%);
+  border-radius: 20px;
+  border: #DAEE68 4px solid;
+  color: #DAEE68;
+  cursor: pointer;
+  font-family: "Syncopate", sans-serif;
+  font-weight: 700;
+  font-display: swap;
+  height: 3.5rem;
+  padding: 0 2rem;
+}
+
+.btn:hover {
+  background: #DAEE68;
+  border: #DAEE68 4px solid;
+  color: #4C97EC;
 }
