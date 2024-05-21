@@ -198,60 +198,88 @@ p {
   background-color: #fd1995;
 }
 
+/************************* Header ****************************************/
 
-/* FOOTER */
-.footer {
-  background: #000;
-  padding: 30px 0px;
-  font-family: 'Play', sans-serif;
-  text-align: center;
+header {
+  background-color: #0e5b5e;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
 }
 
-.footer .row {
-  width: 100%;
-  margin: 1% 0%;
-  padding: 0.6% 0%;
-  color: gray;
-  font-size: 0.8em;
-}
-
-.footer .row a {
+header a {
   text-decoration: none;
-  color: gray;
-  transition: 0.5s;
-}
-
-.footer .row a:hover {
   color: #fff;
 }
 
-.footer .row ul {
-  width: 100%;
+header .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-.footer .row ul li {
-  display: inline-block;
-  margin: 0px 30px;
+header .head #btn-mobile {
+  border: none;
+  padding: 5px;
+  font-size: x-large;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
 }
 
-.footer .row a i {
-  font-size: 2em;
-  margin: 0% 1%;
+header nav {
+  display: none;
+  background-color: #000000cc;
+  padding: 10px 20px;
 }
 
-@media (max-width:720px) {
-  .footer {
-    text-align: left;
-    padding: 5%;
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+header nav ul li {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li a {
+  padding: 10px;
+}
+
+.hidden-nav {
+  display: inline-block !important;
+}
+
+/* pc version */
+@media (min-width: 600px) {
+  header {
+    flex-direction: row;
   }
 
-  .footer .row ul li {
-    display: block;
-    margin: 10px 0px;
-    text-align: left;
+  header .head {
+    justify-content: start;
   }
 
-  .footer .row a i {
-    margin: 0% 3%;
+  header .head #btn-mobile {
+    display: none;
+  }
+
+  header nav {
+    flex-grow: 1;
+    display: inline-block;
+    background-color: transparent;
+  }
+
+  header nav ul {
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  header nav ul li a:hover {
+    border-bottom: 2px orange solid;
   }
 }
