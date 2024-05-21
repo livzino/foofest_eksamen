@@ -1,11 +1,22 @@
 "use client";
 import "./globals.css";
-import Button from "../components/Button";
 import CountDown from "../components/CountDown";
 import Title from "../components/Title";
 
-export default function Home() {
+import Ticket from "../components/Ticket";
+import Vip from "../components/Vip";
+export default async function Home() {
   const targetDate = new Date("Jun 26, 2024").getTime();
-
-  return <main></main>;
+  return (
+    <main>
+      <div></div>
+      <Vip></Vip>
+      <Ticket></Ticket>
+      <br />
+      <br />
+      <br />
+      <br />
+      <Button></Button>
+    </main>
+  );
 }
