@@ -187,3 +187,89 @@ p {
   height: 3px;
   background-color: #fd1995;
 }
+
+/************************* Header ****************************************/
+
+header {
+  background-color: #0e5b5e;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header .head #btn-mobile {
+  border: none;
+  padding: 5px;
+  font-size: x-large;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+header nav {
+  display: none;
+  background-color: #000000cc;
+  padding: 10px 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+header nav ul li {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li a {
+  padding: 10px;
+}
+
+.hidden-nav {
+  display: inline-block !important;
+}
+
+/* pc version */
+@media (min-width: 600px) {
+  header {
+    flex-direction: row;
+  }
+
+  header .head {
+    justify-content: start;
+  }
+
+  header .head #btn-mobile {
+    display: none;
+  }
+
+  header nav {
+    flex-grow: 1;
+    display: inline-block;
+    background-color: transparent;
+  }
+
+  header nav ul {
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  header nav ul li a:hover {
+    border-bottom: 2px orange solid;
+  }
+}
