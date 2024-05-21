@@ -72,33 +72,40 @@
   display: grid;
   grid-template-columns: 1fr;
 }
+
 .hrendags {
   width: 300px;
   height: 2px;
   background: rgb(30 218 230);
   margin: auto;
 }
+
 .endags {
   font-weight: 700;
   margin-bottom: 15px;
   letter-spacing: 4px;
 }
+
 .fullweek {
   font-weight: 700;
   margin-bottom: 5px;
   letter-spacing: 4px;
 }
+
 .pris {
   font-weight: 250;
   font-size: 50px;
   margin-top: 40px;
 }
+
 h1 {
   margin-top: 40px;
 }
+
 .imgendag {
   margin: auto;
 }
+
 .vip {
   text-align: center;
   width: 400px;
@@ -121,15 +128,18 @@ h1 {
   font-size: 50px;
   margin-top: 10px;
 }
+
 .hrvip {
   width: 300px;
   height: 2px;
   background: rgb(218 238 104);
   margin: auto;
 }
+
 .imgv {
   margin: auto;
 }
+
 /* COUNTDOWN */
 .countdown {
   display: flex;
@@ -186,4 +196,62 @@ p {
   width: 576px;
   height: 3px;
   background-color: #fd1995;
+}
+
+
+/* FOOTER */
+.footer {
+  background: #000;
+  padding: 30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width:720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+
+  .footer .row a i {
+    margin: 0% 3%;
+  }
 }
