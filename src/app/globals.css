@@ -10,6 +10,11 @@
 /* Montserrat */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -201,11 +206,17 @@ p {
 /************************* Header ****************************************/
 
 header {
-  background-color: #0e5b5e;
+  background-color: rgba(57, 26, 160, 0.85);
   width: 100vw;
   position: fixed;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  margin: 10px;
+  margin-left: 50px;
 }
 
 header a {
@@ -247,7 +258,10 @@ header nav ul li {
 }
 
 header nav ul li a {
-  padding: 10px;
+  padding: 20px;
+  margin-right: 70px;
+  margin-top: 30px;
+  letter-spacing: 7px;
 }
 
 .hidden-nav {
@@ -255,7 +269,7 @@ header nav ul li a {
 }
 
 /* pc version */
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   header {
     flex-direction: row;
   }
@@ -280,6 +294,7 @@ header nav ul li a {
   }
 
   header nav ul li a:hover {
-    border-bottom: 2px orange solid;
+    border-bottom: 2px #fd1995 solid;
   }
 }
+
