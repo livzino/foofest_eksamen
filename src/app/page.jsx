@@ -8,15 +8,15 @@ import Vip from "../components/Vip";
 export default function Home() {
   const targetDate = new Date("Jun 26, 2024").getTime();
   return (
-    <main>
-      <Header></Header>
-      <div></div>
-      <Vip></Vip>
-      <Ticket></Ticket>
-      <br />
-      <br />
-      <br />
-      <br />
-    </main>
+    <body>
+      <main>
+        <Header></Header>
+
+        <br />
+        <br />
+        <br />
+        <br />
+      </main>
+    </body>
   );
 }
