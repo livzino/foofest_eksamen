@@ -1,38 +1,45 @@
+import { SocialIcon } from "react-social-icons";
+
 export default function Footer() {
   return (
     <footer>
       <div class="footer">
         <div class="row">
           <a href="#">
-            <i class="fa fa-facebook"></i>
+            <SocialIcon className="iconfooter hover:hover:scale-150" network="facebook" bgColor="transparent" fgColor="#DAEE68" url="/" />
           </a>
           <a href="#">
-            <i class="fa fa-instagram"></i>
+            <SocialIcon className="iconfooter hover:hover:scale-150" network="x" bgColor="transparent" fgColor="#DAEE68" url="/" />
           </a>
           <a href="#">
-            <i class="fa fa-youtube"></i>
+            <SocialIcon className="iconfooter hover:hover:scale-150" network="instagram" bgColor="transparent" fgColor="#DAEE68" url="/" />{" "}
           </a>
           <a href="#">
-            <i class="fa fa-twitter"></i>
+            <SocialIcon className="iconfooter hover:hover:scale-150" network="snapchat" bgColor="transparent" fgColor="#DAEE68" url="/" />
           </a>
         </div>
 
         <div class="row">
           <ul>
             <li>
-              <a href="#">Contact us</a>
+              <a className="linksfooter" href="#">
+                CONTACT US
+              </a>
             </li>
             <li>
-              <a href="#">Our Services</a>
+              <a className="linksfooter" href="#">
+                ADRESS
+              </a>
             </li>
             <li>
-              <a href="#">Privacy Policy</a>
+              <a className="linksfooter" href="#">
+                CONTACT
+              </a>
             </li>
             <li>
-              <a href="#">Terms & Conditions</a>
-            </li>
-            <li>
-              <a href="#">Career</a>
+              <a className="linksfooter" href="#">
+                SCHEDULE
+              </a>
             </li>
           </ul>
         </div>
