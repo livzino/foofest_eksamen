@@ -37,13 +37,13 @@
   }
 }
 
+/* KNAP */
 .btn {
   background: linear-gradient(90deg, rgba(83, 201, 238, 1) 0%, rgba(76, 151, 236, 1) 35%, rgba(69, 102, 234, 1) 100%);
   border-radius: 20px;
   border: #daee68 4px solid;
   color: #daee68;
   cursor: pointer;
-  font-family: "Syncopate", sans-serif;
   font-weight: 700;
   font-display: swap;
   height: 3.5rem;
