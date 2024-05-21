@@ -78,3 +78,33 @@ body {
 p {
   margin: 6px;
 }
+
+/* OVERSKRIFTER */
+.titlecontainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.titletxt {
+  color: #DBC2CF;
+  /* Fallback */
+  text-transform: uppercase;
+  -webkit-text-fill-color: #280D7C;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FF0A9D;
+  letter-spacing: 3px;
+  /* Future-proofing */
+  background: linear-gradient(180deg, #FD1995 8.18%, #4E30C5 59.64%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 70px;
+}
+
+.titleline {
+  width: 576px;
+  height: 3px;
+  background-color: #FD1995;
+}
