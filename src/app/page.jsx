@@ -1,5 +1,6 @@
 import "./globals.css";
 import Button from "../components/Button";
+import Countdown from "../components/CountDown.jsx";
 export default async function Home() {
   return (
     <main>
@@ -7,7 +8,8 @@ export default async function Home() {
       <br />
       <br />
       <br />
-      <Button></Button>
+      <Countdown />
+      <Button />
     </main>
   );
 }
