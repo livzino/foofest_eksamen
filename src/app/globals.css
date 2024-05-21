@@ -10,6 +10,11 @@
 /* Montserrat */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -207,11 +212,17 @@ p {
 /************************* Header ****************************************/
 
 header {
-  background-color: #0e5b5e;
+  background-color: rgba(57, 26, 160, 0.85);
   width: 100vw;
   position: fixed;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  margin: 10px;
+  margin-left: 50px;
 }
 
 header a {
@@ -253,7 +264,10 @@ header nav ul li {
 }
 
 header nav ul li a {
-  padding: 10px;
+  padding: 20px;
+  margin-right: 70px;
+  margin-top: 30px;
+  letter-spacing: 7px;
 }
 
 .hidden-nav {
@@ -261,7 +275,7 @@ header nav ul li a {
 }
 
 /* pc version */
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   header {
     flex-direction: row;
   }
@@ -286,7 +300,7 @@ header nav ul li a {
   }
 
   header nav ul li a:hover {
-    border-bottom: 2px orange solid;
+    border-bottom: 2px #fd1995 solid;
   }
 }
 
@@ -294,7 +308,7 @@ header nav ul li a {
 .footer {
   background: rgba(57, 26, 160, 0.852);
   padding: 30px 0px;
-  font-family: 'Play', sans-serif;
+  font-family: "Play", sans-serif;
   text-align: center;
 }
 
@@ -318,8 +332,6 @@ header nav ul li a {
   border-bottom: 2px #fd1995 solid;
 }
 
-
-
 .footer .row ul {
   width: 100%;
 }
@@ -334,7 +346,7 @@ header nav ul li a {
   margin: 0% 1%;
 }
 
-@media (max-width:720px) {
+@media (max-width: 720px) {
   .footer {
     text-align: left;
     padding: 5%;
@@ -354,6 +366,4 @@ header nav ul li a {
     padding: 0;
     border-bottom: none;
   }
-
-
 }
