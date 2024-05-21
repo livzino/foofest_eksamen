@@ -1,14 +1,14 @@
+"use client";
 import "./globals.css";
 import Button from "../components/Button";
-import Countdown from "../components/CountDown.jsx";
-export default async function Home() {
+import CountDown from "../components/CountDown";
+
+export default function Home() {
+  const targetDate = new Date("Jun 26, 2024").getTime();
+
   return (
     <main>
-      <br />
-      <br />
-      <br />
-      <br />
-      <Countdown />
+      <CountDown targetDate={targetDate} />
       <Button />
     </main>
   );

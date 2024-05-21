@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* IMPORT AF FONTE */
-
-/* Syncopate */
-@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
-
-/* Montserrat */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -32,19 +24,21 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
+/* KNAP */
 .btn {
   background: linear-gradient(90deg, rgba(83, 201, 238, 1) 0%, rgba(76, 151, 236, 1) 35%, rgba(69, 102, 234, 1) 100%);
   border-radius: 20px;
   border: #DAEE68 4px solid;
   color: #DAEE68;
   cursor: pointer;
-  font-family: "Syncopate", sans-serif;
   font-weight: 700;
   font-display: swap;
   height: 3.5rem;
@@ -55,4 +49,32 @@ body {
   background: #DAEE68;
   border: #DAEE68 4px solid;
   color: #4C97EC;
+}
+
+/* COUNTDOWN */
+.countdown {
+  display: flex;
+}
+
+.countdown .time {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #280D7C;
+  margin: 0 15px;
+}
+
+.countdown .time div {
+  width: 150px;
+  height: 100px;
+  background-color: #280D7C;
+  display: grid;
+  place-items: center;
+  color: white;
+  border-radius: 0.3rem;
+  font-size: 36px;
+}
+
+p {
+  margin: 6px;
 }
