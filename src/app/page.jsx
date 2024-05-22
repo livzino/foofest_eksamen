@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <main>
       <Title />
+      <br />
       <AreaSection />
     </main>
   );

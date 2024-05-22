@@ -8,8 +8,10 @@
 }
 
 .sectionWrapper p {
-  font-size: 25px;
+  font-size: 1rem;
   line-height: 1.8;
+  max-width: 20rem;
+
 }
 
 .sectionWrapper>div>h2 {
@@ -34,5 +36,10 @@
 
   .sectionWrapper>div>h2 {
     margin-top: -5rem;
+  }
+
+  .sectionWrapper p {
+    font-size: 25px;
+    line-height: 1.8;
   }
 }

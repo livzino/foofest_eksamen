@@ -204,6 +204,7 @@ h4 {
   font-display: swap;
   height: 3.5rem;
   padding: 0 2rem;
+  max-width: 10rem;
 }
 
 .btn:hover {
